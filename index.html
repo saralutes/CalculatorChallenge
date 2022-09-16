@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Calculator</title>
+		<link rel="stylesheet" href="./css/sales">
+		<link rel="stylesheet" href="./css/salesforce-lightning-design-system.css">
+		<link rel="stylesheet" href="./css/main.css">
+	</head>
+	<body class="slds-p-around_x-large slds-brand-band slds-brand-band_large">
+		<div class="slds-container slds-container_center slds-container_small">
+			<form id="calc" oninput="updateOutput()" action="" class="slds-form-element__control slds-var-p-around_large gradient-background">
+				<div class="slds-grid slds-p-bottom_small">
+					<output class="slds-col slds-box slds-theme_info slds-text-align_right" id="result" type="text" for=""></output>
+				</div>
+				<div class="slds-grid slds-p-bottom_small">
+					<input type="button" value="1" onclick="display('1')" class="slds-button slds-button_outline-brand slds-col slds-text-link_reset" />
+					<input type="button" value="2" onclick="display('2')" class="slds-button slds-button_outline-brand slds-col slds-text-link_reset"/>
+					<input type="button" value="3" onclick="display('3')" class="slds-button slds-button_outline-brand slds-col slds-text-link_reset" />
+					<button class="slds-button slds-cols slds-align_absolute-center slds-p-left_medium slds-text-link_reset" value="+" type="button" onclick="display('+')">
+						<span class="slds-icon_container">
+							<img class="slds-icon" src="icons/plus.svg" alt="plus">
+						</span>
+					</button>
+				</div>
+				<div class="slds-grid slds-p-bottom_small">
+					<input type="button" value="4" onclick="display('4')" class="slds-button slds-button_outline-brand slds-col slds-text-link_reset"/>
+					<input type="button" value="5" onclick="display('5')" class="slds-button slds-button_outline-brand slds-col slds-text-link_reset"/>
+					<input type="button" value="6" onclick="display('6')" class="slds-button slds-button_outline-brand slds-col slds-text-link_reset"/>
+					<button type="button" value="-" onclick="display('-')" class="slds-button slds-cols slds-align_absolute-center slds-p-left_medium slds-text-link_reset">
+						<span class="slds-icon_container">
+							<img class="slds-icon" src="icons/minus.svg" alt="minus">
+						</span>
+					</button>
+				</div>
+				<div class="slds-grid slds-p-bottom_small">
+					<input type="button" value="7" onclick="display('7')" class="slds-button slds-button_outline-brand slds-col slds-text-link_reset"/>
+					<input type="button" value="8" onclick="display('8')" class="slds-button slds-button_outline-brand slds-col slds-text-link_reset"/>
+					<input type="button" value="9" onclick="display('9')" class="slds-button slds-button_outline-brand slds-col slds-text-link_reset" />
+					<button type="button" value="*" onclick="display('*')"  class="slds-button slds-cols slds-align_absolute-center slds-p-left_medium slds-text-link_reset">
+						<span class="slds-icon_container">
+							<img class="slds-icon" src="icons/multiply.svg" alt="multiply">
+						</span>
+					</button>
+				</div>
+				<div class="slds-grid slds-p-bottom_small">
+					<button class="slds-button slds-col slds-align_absolute-center slds-text-link_reset" aria-hidden="true">
+						<span class="slds-icon_container">
+							<img class="slds-icon" src="icons/backspace.svg" alt="delete">
+						</span>
+					</button>
+					<input type="button" value="0" onclick="display('0')" class="slds-button slds-button_outline-brand slds-col slds-text-link_reset"/>
+					<button type="button" value="=" onclick="calculate()" class="slds-button slds-col slds-align_absolute-center slds-text-link_reset" aria-hidden="true">
+						<span class="slds-icon_container">
+							<img  class="slds-icon" src="icons/equal.svg" alt="equals">
+						</span>
+					</button>
+					<button type="button" value="/" onclick="display('/')" class="slds-button slds-cols slds-align_absolute-center slds-p-left_medium slds-text-link_reset">
+						<span class="slds-icon_container">
+							<img class="slds-icon" src="icons/division.svg" alt="divide">
+						</span>
+					</button>
+				</div>
+				<div class="slds-grid">
+					<input class="slds-button slds-button_outline-brand slds-cols slds-size_4-of-4 slds-align_absolute-center" type="button" value="Clear" onclick="clearScreen()" id="btn" />
+				</div>
+			</form>
+		</div>
+		<script type="text/javascript" src="./js/main.js"></script>
+	</body>
+</html>
