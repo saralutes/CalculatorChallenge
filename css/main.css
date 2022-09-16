@@ -6,15 +6,12 @@
 /* Elements */
 
 output {
-    border-style: solid;
-    border-width: .15rem;
-    padding: .25rem;
     background-color: #95aec5;
 }
 
 /* Form */
 
 #calc {
-    border-radius: 5%;
+    border-radius: 10%;
     box-shadow: 3px 5px 1.5px gray;
 }
