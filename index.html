@@ -11,7 +11,7 @@
 		<div class="slds-container slds-container_center slds-container_small">
 			<form id="calc" oninput="updateOutput()" action="" class="slds-form-element__control slds-var-p-around_large gradient-background">
 				<div class="slds-grid slds-p-bottom_small">
-					<output class="slds-col slds-box slds-text-align_right" id="result" type="text" for=""></output>
+					<output class="slds-col slds-box slds-text-align_right" id="result" type="text"></output>
 				</div>
 				<div class="slds-grid slds-p-bottom_small">
 					<button type="button" value="1" onclick="display('1')" class="slds-button slds-button_outline-brand slds-col slds-text-link_reset">1</button>
@@ -53,8 +53,8 @@
 					</button>
 				</div>
 				<div class="slds-grid">
-					<button class="slds-button slds-button_outline-brand slds-cols slds-align_absolute-center slds-size_3-of-4" type="button" value="Clear" onclick="clearScreen()" id="btn">Clear</button>
-					<button type="button" value="=" onclick="calculate()" class="slds-button slds-col slds-align_absolute-center slds-p-left_small slds-text-link_reset" aria-hidden="true">
+					<button class="slds-button slds-button_outline-brand slds-cols slds-align_absolute-center slds-size_3-of-4" type="button" value="Clear" onclick="clearScreen()">Clear</button>
+					<button type="button" value="=" onclick="calculate()" class="slds-button slds-col slds-align_absolute-center slds-p-left_small slds-text-link_reset">
 						<span class="slds-icon_container">
 							<img  class="slds-icon" src="icons/equal.svg" alt="equals">
 						</span>
