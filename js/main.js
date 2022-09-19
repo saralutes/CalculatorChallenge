@@ -1,13 +1,16 @@
+// Calculator Challenge Javascript author: Sara Lutes 9/16/22
+
 function clearScreen() {
     document.getElementById("result").value = "";
 };
+
 
 function display(value) {
     document.getElementById("result").value += value;
 };
 
 function calculate() {
-    var p = document.getElementById("result").value;
-    var q = eval(p);
-    document.getElementById("result").value = q;
+    var calculation = document.getElementById("result").value;
+    var calculationResult = eval(calculation);
+    document.getElementById("result").value = calculationResult;
 };
