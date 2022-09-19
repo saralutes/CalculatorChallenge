@@ -1,16 +1,16 @@
+/* Custom Calculator CSS author: Sara Lutes 9/15/22 */
+
 /* Container */
 .gradient-background {
     background: linear-gradient(50deg, rgba(122,226,255,1) 0%, rgba(133,122,255,1) 100%) -3px -2px / 500px 500px no-repeat no-repeat; /* New Gradient */
 }
 
-/* Elements */
-
+/* Element*/
 output {
     background-color: #95aec5;
 }
 
 /* Form */
-
 #calc {
     border-radius: 10%;
     box-shadow: 3px 5px 1.5px gray;
